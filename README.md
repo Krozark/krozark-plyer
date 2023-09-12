@@ -12,14 +12,14 @@ platforms, notably mobile ones, in Python.
 ![Deploy to PyPI](https://github.com/kivy/plyer/workflows/Deploy%20to%20PyPI/badge.svg)
 
 
-## How
+## How plyer works?
 
 Plyer tries not to reinvent the wheel, and will call for external libraries to
 implement the api in the easiest way, depending on the current platform.
 
-- on python-for-android, pyjnius is used
-- on kivy-ios, pyobjus is used
-- on windows/mac/linux, commonly found libraries and programs will be used
+- On Android(python-for-android), pyjnius is used
+- On iOS(kivy-ios), pyobjus is used
+- On windows/mac/linux, commonly found libraries and programs will be used
 
 
 ## Supported APIs
@@ -44,13 +44,15 @@ implement the api in the easiest way, depending on the current platform.
 | Gyroscope                      | ✔       | ✔   |         |      |       |
 | Humidity                       | ✔       |     |         |      |       |
 | IR Blaster                     | ✔       |     |         |      |       |
+| Keystore                       | ✔       | ✔   | ✔       | ✔    | ✔     |
 | Light                          | ✔       |     |         |      |       |
-| Native file chooser            | ✔       |     | ✔       | ✔    | ✔     |
+| Maps                           |         | ✔   |         | ✔    |       |
+| Native file chooser            | ✔       | ✔   | ✔       | ✔    | ✔     |
 | Notifications                  | ✔       |     | ✔       | ✔    | ✔     |
-| Orientation                    | ✔       |     |         |      |       |
+| Orientation                    | ✔       |     |         |      | ✔     |
 | Proximity                      | ✔       |     |         |      |       |
 | Screenshot                     |         |     | ✔       | ✔    | ✔     |
-| SMS (send messages)            | ✔       | ✔   |         |      |       |
+| SMS (send messages)            | ✔       | ✔   |         | ✔    |       |
 | Spatial Orientation            | ✔       | ✔   |         |      |       |
 | Speech to text                 | ✔       |     |         |      |       |
 | Storage Path                   | ✔       | ✔   | ✔       | ✔    | ✔     |
@@ -103,6 +105,11 @@ IRC channel:
 Plyer is released under the terms of the MIT License. Please refer to the
 LICENSE file.
 
+## Contributors
+
+This project exists thanks to all the people who contribute. [[Contribute](http://kivy.org/docs/contribute.html)].
+
+<a href="https://github.com/kivy/plyer/graphs/contributors"><img src="https://contrib.rocks/image?repo=kivy/plyer"/></a>
 
 ## Backers
 

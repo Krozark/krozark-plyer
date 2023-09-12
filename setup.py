@@ -66,7 +66,7 @@ setup(
     package_data={'': ['LICENSE', 'README.md']},
     package_dir={'plyer': 'plyer'},
     include_package_data=True,
-    license=open(join(CURDIR, 'LICENSE')).read(),
+    license='MIT',
     zip_safe=False,
     classifiers=[
         'Development Status :: 4 - Beta',
@@ -75,12 +75,11 @@ setup(
         'License :: OSI Approved :: MIT License',
         'Programming Language :: Python',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.3',
-        'Programming Language :: Python :: 3.4',
-        'Programming Language :: Python :: 3.5',
-        'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
+        'Programming Language :: Python :: 3.11',
     ],
     **EXTRA_OPTIONS
 )

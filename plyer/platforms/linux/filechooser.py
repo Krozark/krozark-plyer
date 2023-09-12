@@ -64,12 +64,16 @@ class SubprocessFileChooser:
             if ret is not None:
                 if ret == self.successretcode:
                     out = self._process.communicate()[0].strip().decode('utf8')
-                    self.selection = self._split_output(out)
-                    self._handle_selection(self.selection)
-                    return self.selection
+                    return self._set_and_return_selection(
+                        self._split_output(out))
                 else:
-                    return None
+                    return self._set_and_return_selection(None)
             time.sleep(0.1)
+
+    def _set_and_return_selection(self, value):
+        self.selection = value
+        self._handle_selection(value)
+        return value
 
     def _split_output(self, out):
         '''This methods receives the output of the back-end and turns
@@ -191,7 +195,7 @@ class YADFileChooser(SubprocessFileChooser):
     def _gen_cmdline(self):
         cmdline = [
             which(self.executable),
-            "--file-selection",
+            "--file",
             "--confirm-overwrite",
             "--geometry",
             "800x600+150+150"
