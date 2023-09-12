@@ -8,12 +8,12 @@ __all__ = (
     'accelerometer', 'audio', 'barometer', 'battery', 'bluetooth',
     'brightness', 'call', 'camera', 'compass', 'cpu', 'email', 'filechooser',
     'flash', 'gps', 'gravity', 'gyroscope', 'humidity', 'irblaster',
-    'keystore', 'light', 'notification', 'orientation', 'processors',
+    'keystore', 'light', 'maps', 'notification', 'orientation', 'processors',
     'proximity', 'screenshot', 'sms', 'share', 'spatialorientation', 'storagepath',
     'stt', 'temperature', 'tts', 'uniqueid', 'vibrator', 'wifi', 'devicename'
 )
 
-__version__ = '2.1.0.dev0'
+__version__ = '2.2.0.dev0'
 
 
 from plyer import facades
@@ -22,7 +22,7 @@ from plyer.utils import Proxy
 #: Accelerometer proxy to :class:`plyer.facades.Accelerometer`
 accelerometer = Proxy('accelerometer', facades.Accelerometer)
 
-#: Keyring proxy to :class::`plyer.facades.Keyring`
+#: Keyring proxy to :class::`plyer.facades.Keystore`
 keystore = Proxy('keystore', facades.Keystore)
 
 #: Audio proxy to :class:`plyer.facades.Audio`
@@ -125,3 +125,6 @@ screenshot = Proxy('screenshot', facades.Screenshot)
 
 #: devicename proxy to :class:`plyer.facades.DeviceName`
 devicename = Proxy('devicename', facades.DeviceName)
+
+#: Maps proxy to :class:`plyer.facades.Maps`
+maps = Proxy('maps', facades.Maps)

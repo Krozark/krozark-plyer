@@ -46,12 +46,13 @@ implement the api in the easiest way, depending on the current platform.
 | IR Blaster                     | ✔       |     |         |      |       |
 | Keystore                       | ✔       | ✔   | ✔       | ✔    | ✔     |
 | Light                          | ✔       |     |         |      |       |
+| Maps                           |         | ✔   |         | ✔    |       |
 | Native file chooser            | ✔       | ✔   | ✔       | ✔    | ✔     |
 | Notifications                  | ✔       |     | ✔       | ✔    | ✔     |
-| Orientation                    | ✔       |     |         |      |       |
+| Orientation                    | ✔       |     |         |      | ✔     |
 | Proximity                      | ✔       |     |         |      |       |
 | Screenshot                     |         |     | ✔       | ✔    | ✔     |
-| SMS (send messages)            | ✔       | ✔   |         |      |       |
+| SMS (send messages)            | ✔       | ✔   |         | ✔    |       |
 | Spatial Orientation            | ✔       | ✔   |         |      |       |
 | Speech to text                 | ✔       |     |         |      |       |
 | Storage Path                   | ✔       | ✔   | ✔       | ✔    | ✔     |
@@ -104,6 +105,11 @@ IRC channel:
 Plyer is released under the terms of the MIT License. Please refer to the
 LICENSE file.
 
+## Contributors
+
+This project exists thanks to all the people who contribute. [[Contribute](http://kivy.org/docs/contribute.html)].
+
+<a href="https://github.com/kivy/plyer/graphs/contributors"><img src="https://contrib.rocks/image?repo=kivy/plyer"/></a>
 
 ## Backers
 
