@@ -54,14 +54,14 @@ with io.open(join(CURDIR, "CHANGELOG.md"), encoding="utf8") as fd:
     CHANGELOG = fd.read()
 
 setup(
-    name='krozark-plyer',
+    name='plyer',
     version=plyer.__version__,
     description='Platform-independent wrapper for platform-dependent APIs',
     long_description=README + u"\n\n" + CHANGELOG + u"\n\n",
     long_description_content_type='text/markdown',
-    author='Krozark',
-    author_email='maxime.barbier1991+github@gmail.com',
-    url='https://github.com/Krozark/krozark-plyer/',
+    author='Kivy team',
+    author_email='mat@kivy.org',
+    url='https://plyer.readthedocs.org/en/latest/',
     packages=PACKAGES,
     package_data={'': ['LICENSE', 'README.md']},
     package_dir={'plyer': 'plyer'},
